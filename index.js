@@ -15,7 +15,7 @@ client.on('message', message => {
     const {command, ...args} = message.content.slice(prefix.length).split(' ')
 
     if (command === 'say') {
-        message.channel.send(`<@${message.author.id}>\r${message.content}`)
+        message.channel.send(`<@${message.author.id}>\r${args[0]}`)
     }
 });
 
