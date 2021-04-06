@@ -6,9 +6,7 @@ Discord.jsのBotのテンプレートです。
 
 ## ①. [ここ](https://discord.com/developers/applications) から、
 
-**NewApplication** > **Name** にBotの名前を入れる。 > **Create** >
-
-**Bot** > **AddBot** > **Yes,doit!** でBotを作成。
+**NewApplication** > **Name** にBotの名前を入れる。 > **Create** > **Bot** > **AddBot** > **Yes,doit!** でBotを作成。
 
 botを自分のサーバーに入れておき、Tokenをコピーしておく。
 
@@ -23,4 +21,4 @@ botを自分のサーバーに入れておき、Tokenをコピーしておく。
 
 ## ⑥. **起動用.bat** を起動。
 
-## ユーザー名#ID でログインしていますと出たら起動完了。
+ユーザー名#ID でログインしていますと出たら起動完了。
