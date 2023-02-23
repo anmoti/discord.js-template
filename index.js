@@ -1,22 +1,16 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const { Client } = require("discord.js");
+const ddlogger = require("dd-logger");
+const config = require("./config.js");
 
-const {prefix, token} = require('./config.json')
+const client = new Client(config.bot.option);
+client.logger = new ddlogger.Channel(config.logger);
+client.config = config;
 
-client.on('ready', () => {
-  console.log(`${client.user.tag}(${client.user.id})でログインしています。`);
-});
 
-client.on('message', message => {
-    if (message.author.id == client.user.id)
-    if (!message.content.startsWith(prefix)) {
-        return;
-    };
-    const {command, ...args} = message.content.slice(prefix.length).split(' ')
+const runFunc = [
+    require("./libs/eventLoader.js"),
+    require("./libs/commandLoader.js")
+]
+runFunc.forEach(func => func(client));
 
-    if (command === 'say') {
-        message.channel.send(`<@${message.author.id}>\r${args[0]}`)
-    }
-});
-
-client.login(token);
+client.login(config.bot.token);
