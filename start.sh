@@ -1,4 +1,0 @@
-while :
-do
-node .
-done

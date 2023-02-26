@@ -1,24 +1,27 @@
 {
-  "name": "discord.js-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anmoti/discord.js-template.git"
-  },
-  "author": "AnmotiProjects, Anmoti",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anmoti/discord.js-template/issues"
-  },
-  "homepage": "https://github.com/anmoti/discord.js-template#readme",
-  "dependencies": {
-    "dd-logger": "^1.0.0",
-    "discord.js": "^14.7.1",
-    "fs": "^0.0.1-security"
-  }
+    "name": "discord.js-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anmoti/discord.js-template.git"
+    },
+    "author": "AnmotiProjects, Anmoti",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anmoti/discord.js-template/issues"
+    },
+    "homepage": "https://github.com/anmoti/discord.js-template#readme",
+    "dependencies": {
+        "dd-logger": "^1.0.0",
+        "discord.js": "^14.7.1",
+        "fs": "^0.0.1-security"
+    },
+    "devDependencies": {
+        "prettier": "^2.8.4"
+    }
 }
